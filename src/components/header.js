@@ -4,7 +4,7 @@ import { LinkedInIcon, MailIcon, GitHubIcon } from './_ui/icons';
 
 export default () => (
 	<div sx={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
-		<div>
+		<div sx={{width: '100vw'}}>
 			<Styled.h1>se-rene</Styled.h1>
 			<Styled.h2> Serene Lim | Full Stack Developer</Styled.h2>
 			<Styled.h3>I code and make things happen.</Styled.h3>
