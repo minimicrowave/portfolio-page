@@ -1,42 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui';
+import { LinkedInIcon, MailIcon, GitHubIcon } from './_ui/icons';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default () => (
+	<div sx={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
+		<div>
+			<Styled.h1>se-rene</Styled.h1>
+			<Styled.h2> Serene Lim | Full Stack Developer</Styled.h2>
+			<Styled.h3>I code and make things happen.</Styled.h3>
+			<div>
+				<Styled.a href="https://www.linkedin.com/in/se-rene/">
+					<LinkedInIcon />
+				</Styled.a>
+				<Styled.a href="mailto:se-rene@outlook.com">
+					<MailIcon />
+				</Styled.a>
+				<Styled.a href="https://github.com/minimicrowave">
+					<GitHubIcon />
+				</Styled.a>
+			</div>
+		</div>
+	</div>
+);
