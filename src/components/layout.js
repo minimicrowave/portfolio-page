@@ -8,9 +8,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import Header from './header';
 import './layout.css';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
+
 
 const Layout = ({ children }) => {
 	const data = useStaticQuery(graphql`
@@ -38,8 +40,8 @@ const Layout = ({ children }) => {
 					style={{
 						backgroundColor: '#f6f6f6',
 						width: '100%',
-						height: '85vh',
-						marginTop: '-80vh',
+						height: '65vh',
+						marginTop: '-60vh',
 						zIndex: -1,
 						display: 'flex',
 						justifyContent: 'center',

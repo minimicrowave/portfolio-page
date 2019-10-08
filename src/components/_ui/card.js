@@ -19,7 +19,7 @@ const FadeTransition = (props) => (
 	/>
 );
 
-export default ({ front, back, backgroundColor }) => {
+export default ({ isIcon, front, back, backgroundColor }) => {
 	const [ clicked, setClicked ] = useState(false);
 
 	return (
@@ -30,8 +30,8 @@ export default ({ front, back, backgroundColor }) => {
 				display: 'flex',
 				justifyContent: 'center',
 				alignItems: 'center',
-				height: '50vh',
-				width: '50vh',
+				height: ['60vh', '60vh', '40vh'],
+				width: ['100vh', '60vh', '40vh'],
 				transition: '0.3s',
 				':hover': {
 					cursor: 'pointer',
@@ -44,7 +44,7 @@ export default ({ front, back, backgroundColor }) => {
 				<FadeTransition
 					key={clicked ? `Clicked: ${front}` : `Not Clicked: ${back}`}
 				>
-					<div sx={{ fontFamily: 'Helvetica' }}>{clicked ? back : front}</div>
+					<div sx={{ fontFamily: 'Helvetica', width: isIcon && !clicked? '30%': '70%' }}>{clicked ? back : front}</div>
 				</FadeTransition>
 			</SwitchTransition>
 		</div>
