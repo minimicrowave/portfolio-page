@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { TiSocialLinkedin } from 'react-icons/ti';
-import { FiGithub, FiMail } from 'react-icons/fi';
+import { FiGithub, FiMail, FiLink } from 'react-icons/fi';
 
 const LinkedInIcon = () => (
 	<TiSocialLinkedin
 		sx={{
-            color: 'inherit',
-            fontSize: [ 5, 5, 6 ],
-            margin: 2
+			color: 'inherit',
+			fontSize: [ 5, 5, 6 ],
+			margin: 2
 		}}
 	/>
 );
@@ -16,10 +16,10 @@ const LinkedInIcon = () => (
 const MailIcon = () => (
 	<FiMail
 		sx={{
-            color: 'inherit',
-             fontSize: [ 4, 4, 5 ],
-              margin: 2,
-              mr: 3
+			color: 'inherit',
+			fontSize: [ 4, 4, 5 ],
+			margin: 2,
+			mr: 3
 		}}
 	/>
 );
@@ -27,11 +27,25 @@ const MailIcon = () => (
 const GitHubIcon = () => (
 	<FiGithub
 		sx={{
-            color: 'inherit',
-             fontSize: [ 4, 4, 5 ],
-              margin: 2
+			color: 'inherit',
+			fontSize: [ 4, 4, 5 ],
+			margin: 2
 		}}
 	/>
 );
 
-export { LinkedInIcon, MailIcon, GitHubIcon };
+const LinkIcon = () => (
+	<FiLink
+		sx={{
+			color: 'inherit',
+			fontSize: [ 4, 4, 5 ],
+			margin: 2,
+			transition: '0.3s',
+			":hover": {
+				color: 'white'
+			}
+		}}
+	/>
+);
+
+export { LinkedInIcon, MailIcon, GitHubIcon, LinkIcon };
