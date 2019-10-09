@@ -60,6 +60,11 @@ export default {
 			padding: 1,
 			fontWeight: 'body',
 			margin: 0
+		},
+		h5: {
+			display: 'block',
+			marginTop: 3,
+			fontSize: 0
 		}
 	}
 };
