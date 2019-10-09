@@ -1,0 +1,1 @@
+.fade-enter{opacity:0;-webkit-transform:translateY(20%);transform:translateY(20%)}.fade-enter-active{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}.fade-enter-active,.fade-exit{-webkit-transition:.4s ease;transition:.4s ease}.fade-exit{opacity:0;-webkit-transform:translateY(-20%);transform:translateY(-20%)}
