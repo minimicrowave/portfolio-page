@@ -1,7 +1,6 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="k" src="./images/SR_Circle.png" width="60" />
+  <a href="http://se-rene.com/">
+    <img alt="SR" src="./src/images/SR_Circle.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -51,6 +50,5 @@ A quick look at the top-level files and directories you'll see in a k project.
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
-
 
 <!-- AUTO-GENERATED-CONTENT:END -->
